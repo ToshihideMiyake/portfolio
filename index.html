@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+    <link rel="stylesheet" href="destyle.css">
+    <link rel="stylesheet" href="SpeedFlex.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Toshihide Miyake's Portfolio</title>
+    <script src="https://kit.fontawesome.com/57148d5cd1.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <script src="smoothscroll.js"></script>  <!-- scrollIntoView polyfill  -->
+</head>
+<body class="relative-wrapper" id="body">
+  <div class="scrtotop" id="scrtotop">
+    <div class="w-h-100per flex j-center a-center relative">
+      <img src="app-icons/roundcircle-min.png" class="w-h-100per roundcircle">
+      <img src="app-icons/arrow-min.png" class="scrtotop-img">
+    </div>
+  </div>
+  <div class="all flex column a-center"id="all">
+    <header class="fade-on">
+      <div class="logo" onclick="reload()"><img src="app-icons/logo.png"></div>
+      <nav class="nav-wrapper flex column around a-center">
+        <div class="nav-link relative-wrapper" onclick="link(this)" id="about"><p class="nav-link-text">ABOUT</p></div>
+        <div class="nav-link relative-wrapper" id="sites"><p class="nav-link-text">SITE</p></div>
+        <div class="nav-link relative-wrapper" id="apps"><p class="nav-link-text">APP</p></div>
+        <div class="nav-link relative-wrapper"><a href="https://zenn.dev/toshihide2000" target="_blank"><p class="nav-link-text">Zenn</p></a></div>
+        <div class="nav-link relative-wrapper"><a href="https://github.com/ToshihideMiyake" target="_blank"><p class="nav-link-text">Github</p></a></div>
+      </nav>
+      <!-- mobile nav-->
+      <nav class="mobile-nav">
+          <img class="plus" id="plus" src="app-icons/close-min.png">
+      </nav>
+      <div class="flex j-center a-center mobile-nav-page" id="mobile-nav-page">
+        <div class="inner relative-wrapper flex column a-center around">
+          <div class="mobile-nav-link flex j-center a-center"><a href="./index/about/index.html">ABOUT</a></div>
+          <div class="mobile-nav-link flex j-center a-center"><a href="https://zenn.dev/toshihide2000" target="_blank">Zenn</a></div>
+          <div class="mobile-nav-link flex j-center a-center"><a href="https://github.com/ToshihideMiyake" target="_blank">Github</a></div>
+          <div class="mobile-copyright">
+            <small>
+              <div class="cr-row">
+                <span class="space">&copy2022</span>
+                <span class="">MIYAKE</span>
+                <span>TOSHIHIDE</span>
+              </div>
+            </small>
+           </div>
+        </div>
+      </div>
+    </header>
+  <main>
+    <div class="menu">
+      <div class="menus menus-border" id="menu-all">ALL</div>
+      <div class="menus" id="menu-site">SITE</div>
+      <div class="menus no-margin" id="menu-app">APP</div>
+    </div>
+    <div class="relative-wrapper mainview flex j-center" onclick="reset()">
+      <div class="topview relative-wrapper">
+        <div class="w-h-100per works-wrapper fade-on flex wrap around a-center" id="works-wrapper">
+          <div class="works flex j-center a-center site relative-wrapper speedgrid" id="speedgrid" onclick="link(this)">
+            <img src="app-icons/SpeedGrid-icon-min.png" class="w-h-100per">
+            <div class="year small">2022</div>
+            <div class="title small">SpeedGrid.js</div>
+          </div>
+          <div class="works flex j-center a-center app relative-wrapper" id="kuraberu" onclick="link(this)">
+            <img src="app-icons/kuraberukun-icon-2-min.png" class="w-h-100per">
+            <div class="year small">2022</div>
+            <div class="title small">くらべる!</div>
+          </div>
+          <div class="works flex j-center a-center app relative-wrapper" id="kuraberu-pro" onclick="link(this)">
+            <img src="app-icons/kuraberu-pro-icon-min.png" class="w-h-100per">
+            <div class="year small">2022</div>
+            <div class="title small">くらべる! PRO</div>
+          </div>
+          <div class="br"></div>
+          <div class="works flex j-center a-center site relative-wrapper" id="portfolio" onclick="link(this)">
+            <img src="app-icons/logo.png" class="w-h-100per">
+            <div class="year small">2021</div>
+            <div class="title small">ポートフォリオ</div>
+          </div>
+          <div class="works flex j-center a-center app relative-wrapper" id="colon" onclick="link(this)">
+            <img src="app-icons/colon-min.png" class="w-h-100per">
+            <div class="year small">2021</div>
+            <div class="title small">COLON</div>
+          </div>
+          <div class="works flex j-center a-center app relative-wrapper" id="kinyoku" onclick="link(this)">
+            <img src="app-icons/newicon-kinyoku-min.png" class="w-h-100per">
+            <div class="year small">2020</div>
+            <div class="title small">RAISE</div>
+          </div>
+          <div class="br"></div>
+          <div class="works flex j-center a-center app relative-wrapper" id="memopro" onclick="link(this)">
+            <img src="app-icons/memo-pro-icon-min.png" class="w-h-100per">
+            <div class="year small">2021</div>
+            <div class="title small">文字数制限メモPro</div>
+          </div>
+          <div class="works flex j-center a-center app relative-wrapper" id="memo" onclick="link(this)">
+            <img src="app-icons/memo-icon-min.png" class="w-h-100per">
+            <div class="year small">2020</div>
+            <div class="title small">文字数制限メモLite</div>
+          </div>
+          <div class="works flex j-center a-center invisible"></div>
+          <div class="mobile-lastelm" id="mobile-lastelm"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+   <div class="copyright fade-on">
+    <small>
+      <div class="cr-row justify-between align-center">
+        <span class="">&copy2022</span>
+        <span>MIYAKE</span>
+        <span>TOSHIHIDE</span>
+      </div>
+    </small>
+   </div>
+  </footer>
+  </div>
+  </body>
+</html>

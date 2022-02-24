@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
+    <link rel="stylesheet" href="../../destyle.css">
+    <link rel="stylesheet" href="../../SpeedFlex.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>About</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xjk4jwf.css"><!-- mr-eaves-xl-modern -->
+  </head>
+  <body class="relative vw-vh-100">
+    <img id="close" src="../../app-icons/close-min.png">
+    <div class="upper flex j-center a-center" id="upper">
+      <div class="name">MIYAKE TOSHIHIDE</div>
+    </div>
+    <div class="bottom flex evenly a-center" id="bottom">
+      <div class="history-text-box flex column a-start around">
+        <p><span class="age">2000-</span>大阪府和泉市に生まれる。</p>
+        <p><span class="age">2015-</span>清教学園高校入学。</p>
+        <p><span class="age">2018-</span>同志社大学文学部入学</p>
+        <p><span class="age">2020-</span>アプリをリリースし始める</p>
+        <p><span class="age age-last">2023-</span>同志社大学卒業予定</p>
+      </div>
+      <div class="bottom-text flex j-center a-center">
+        <div class="intro">
+            <p class="intro-rows">フロントエンドエンジニア志望。</p>
+            <p class="intro-rows inline">2000年1月31日生まれ。大阪府和泉市出身。<br>同志社大学卒業見込み。<br>
+            ブログの装飾をする中でマークアップ言語に触れ、自分が手を加えたものが世に公開されることに面白さを感じてWeb制作業を志す。</p>
+            <p class="intro-rows inline">同じ理由からアプリ制作にも強い魅力を感じ、JavaScriptで作ることができるハイブリッドアプリの形式で、現在までに9つのアプリを制作。
+            内6つをGoogle Play Store、App Storeにて公開・運営している。</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("close").addEventListener("click",()=>{
+        document.getElementById("upper").classList.add("fadeout-u");
+        document.getElementById("bottom").classList.add("fadeout-b");
+        setTimeout(()=>{
+          location.href="../../index.html"
+        },750);
+      });
+    </script>
+  </body>
+</html>

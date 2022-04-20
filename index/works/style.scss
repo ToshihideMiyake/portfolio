@@ -209,6 +209,11 @@ h1 {
   height: fit-content;
 }
 
+.screenshot{
+  width: 60vw;
+  height: auto;
+}
+
 .icon {
   width: 300px;
   height: fit-content;
@@ -267,9 +272,9 @@ h1 {
   transform: rotate(180deg) scale(1);
 }
 
-#lastelm {
-  margin-top: -50px;
-}
+// #lastelm {
+//   margin-top: -50px;
+// }
 
 .relative {
   position: relative;
@@ -407,8 +412,11 @@ h1 {
     margin-top: 0;
   }
 
-  #lastelm {
-    margin: -50px 0 100px 0;
+  // #lastelm {
+  //   margin: -50px 0 100px 0;
+  // }
+  .screenshot{
+    width: 80vw;
   }
 
   .scrtotop {
@@ -505,8 +513,11 @@ h1 {
     margin-top: 0;
   }
 
-  #lastelm {
-    margin: -50px 0 100px 0;
+  // #lastelm {
+  //   margin: -50px 0 100px 0;
+  // }
+  .screenshot{
+    width: 80vw;
   }
 
   .scrtotop {
@@ -586,8 +597,11 @@ h1 {
     margin-top: 0;
   }
 
-  #lastelm {
-    margin-bottom: 100px;
+  // #lastelm {
+  //   margin-bottom: 100px;
+  // }
+  .screenshot{
+    width: 80vw;
   }
 
   .scrtotop {
